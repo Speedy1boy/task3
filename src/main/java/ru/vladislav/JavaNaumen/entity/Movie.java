@@ -1,8 +1,27 @@
 package ru.vladislav.JavaNaumen.entity;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "movies") // Фильмы
 public class Movie {
+    @Id
+    @GeneratedValue
     private Long id;
-    private String name;
+
+    @Column
+    private String title;
+
+    @Column
+    private String description;
+
+    @Column
+    private String duration;
+
+    @Column
+    private String ageRating;
+
+    @Column
     private String genre;
 
     public Long getId() {
@@ -13,12 +32,36 @@ public class Movie {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
+
+    public String getAgeRating() {
+        return ageRating;
+    }
+
+    public void setAgeRating(String ageRating) {
+        this.ageRating = ageRating;
     }
 
     public String getGenre() {
@@ -31,6 +74,6 @@ public class Movie {
 
     @Override
     public String toString() {
-        return String.format("Movie(%d, %s, %s)", id, name, genre);
+        return String.format("Movie(%d, %s, %s)", id, title, genre);
     }
 }

@@ -23,29 +23,29 @@ public class Config {
     @Value("${app.version}")
     private String version;
 
-    @Bean
-    public CommandLineRunner commandLineRunner(CommandProcessor commandProcessor) {
-        return args -> {
-            try (var scanner = new Scanner(System.in)) {
-                System.out.println("Введите команду \"exit\" для выхода.");
-                while (true) {
-                    System.out.print("> ");
-                    var input = scanner.nextLine();
-                    if ("exit".equalsIgnoreCase(input.trim())) {
-                        System.out.println("Выход из программы...");
-                        break;
-                    }
-                    commandProcessor.processCommand(input);
-                }
-            }
-        };
-    }
-
-    @Bean
-    @Scope(value = BeanDefinition.SCOPE_SINGLETON)
-    public List<Movie> movieContainer() {
-        return new ArrayList<>();
-    }
+//    @Bean
+//    public CommandLineRunner commandLineRunner(CommandProcessor commandProcessor) {
+//        return args -> {
+//            try (var scanner = new Scanner(System.in)) {
+//                System.out.println("Введите команду \"exit\" для выхода.");
+//                while (true) {
+//                    System.out.print("> ");
+//                    var input = scanner.nextLine();
+//                    if ("exit".equalsIgnoreCase(input.trim())) {
+//                        System.out.println("Выход из программы...");
+//                        break;
+//                    }
+//                    commandProcessor.processCommand(input);
+//                }
+//            }
+//        };
+//    }
+//
+//    @Bean
+//    @Scope(value = BeanDefinition.SCOPE_SINGLETON)
+//    public List<Movie> movieContainer() {
+//        return new ArrayList<>();
+//    }
 
     @PostConstruct
     public void printInfo() {
