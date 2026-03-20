@@ -1,5 +1,6 @@
 package ru.vladislav.JavaNaumen.entity;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 
 @Entity
@@ -7,6 +8,7 @@ import jakarta.persistence.*;
 public class Hall {
     @Id
     @GeneratedValue
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private Long id;
 
     @Column

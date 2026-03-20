@@ -3,6 +3,7 @@ package ru.vladislav.JavaNaumen.service;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
@@ -17,6 +18,7 @@ import ru.vladislav.JavaNaumen.repository.BookingRepository;
 import ru.vladislav.JavaNaumen.repository.TicketRepository;
 
 @Service
+@Transactional
 public class BookingServiceImpl implements BookingService {
     private final BookingRepository bookingRepository;
     private final TicketRepository ticketRepository;
