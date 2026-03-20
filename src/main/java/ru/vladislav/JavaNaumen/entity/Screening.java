@@ -1,5 +1,6 @@
 package ru.vladislav.JavaNaumen.entity;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -9,6 +10,7 @@ import java.time.LocalDateTime;
 public class Screening {
     @Id
     @GeneratedValue
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private Long id;
 
     @Column

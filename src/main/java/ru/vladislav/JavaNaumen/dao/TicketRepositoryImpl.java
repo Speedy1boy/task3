@@ -1,11 +1,12 @@
 package ru.vladislav.JavaNaumen.dao;
 
-import jakarta.persistence.EntityManager;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import ru.vladislav.JavaNaumen.entity.Ticket;
 
-import java.util.List;
+import jakarta.persistence.EntityManager;
+import ru.vladislav.JavaNaumen.entity.Ticket;
 
 @Repository
 public class TicketRepositoryImpl implements TicketRepositoryCustom {
