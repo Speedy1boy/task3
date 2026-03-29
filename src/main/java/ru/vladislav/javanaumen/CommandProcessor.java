@@ -1,8 +1,8 @@
-package ru.vladislav.JavaNaumen;
+package ru.vladislav.javanaumen;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import ru.vladislav.JavaNaumen.service.MovieService;
+import ru.vladislav.javanaumen.service.MovieService;
 
 @Component
 public class CommandProcessor {

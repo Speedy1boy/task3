@@ -1,9 +1,9 @@
-package ru.vladislav.JavaNaumen.service;
+package ru.vladislav.javanaumen.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.vladislav.JavaNaumen.entity.Movie;
-import ru.vladislav.JavaNaumen.repository.MovieRepository;
+import ru.vladislav.javanaumen.entity.Movie;
+import ru.vladislav.javanaumen.repository.MovieRepository;
 
 @Service
 public class MovieServiceImpl implements MovieService {

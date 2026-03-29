@@ -1,11 +1,11 @@
-package ru.vladislav.JavaNaumen.repository;
+package ru.vladislav.javanaumen.repository;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import ru.vladislav.JavaNaumen.entity.Movie;
+import ru.vladislav.javanaumen.entity.Movie;
 
 @Component
 public class MovieRepository implements CrudRepository<Movie, Long> {

@@ -1,4 +1,4 @@
-package ru.vladislav.JavaNaumen.repository;
+package ru.vladislav.javanaumen.repository;
 
 public interface CrudRepository<T, ID> {
     void create(T entity);

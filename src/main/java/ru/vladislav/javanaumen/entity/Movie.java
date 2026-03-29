@@ -1,4 +1,4 @@
-package ru.vladislav.JavaNaumen.entity;
+package ru.vladislav.javanaumen.entity;
 
 public class Movie {
     private Long id;

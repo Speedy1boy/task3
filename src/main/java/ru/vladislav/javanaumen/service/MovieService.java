@@ -1,6 +1,6 @@
-package ru.vladislav.JavaNaumen.service;
+package ru.vladislav.javanaumen.service;
 
-import ru.vladislav.JavaNaumen.entity.Movie;
+import ru.vladislav.javanaumen.entity.Movie;
 
 public interface MovieService {
     void createMovie(Long id, String name, String genre);
