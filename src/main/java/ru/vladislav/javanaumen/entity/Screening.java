@@ -1,4 +1,4 @@
-package ru.vladislav.JavaNaumen.entity;
+package ru.vladislav.javanaumen.entity;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "screenings") // Сеансы
+@Table(name = "screening") // Сеансы
 public class Screening {
     @Id
     @GeneratedValue

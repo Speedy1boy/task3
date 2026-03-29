@@ -1,10 +1,10 @@
-package ru.vladislav.JavaNaumen.service;
+package ru.vladislav.javanaumen.service;
 
 import java.util.List;
 
-import ru.vladislav.JavaNaumen.entity.Booking;
-import ru.vladislav.JavaNaumen.entity.Seat;
-import ru.vladislav.JavaNaumen.entity.Screening;
+import ru.vladislav.javanaumen.entity.Booking;
+import ru.vladislav.javanaumen.entity.Seat;
+import ru.vladislav.javanaumen.entity.Screening;
 
 public interface BookingService {
     // Создание брони с билетами

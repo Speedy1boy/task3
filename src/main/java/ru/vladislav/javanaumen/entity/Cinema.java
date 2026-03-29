@@ -1,10 +1,10 @@
-package ru.vladislav.JavaNaumen.entity;
+package ru.vladislav.javanaumen.entity;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "cinemas") // Кинотеатры
+@Table(name = "cinema") // Кинотеатры
 public class Cinema {
     @Id
     @GeneratedValue

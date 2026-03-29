@@ -1,4 +1,4 @@
-package ru.vladislav.JavaNaumen.service;
+package ru.vladislav.javanaumen.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
 
-import ru.vladislav.JavaNaumen.entity.Booking;
-import ru.vladislav.JavaNaumen.entity.Seat;
-import ru.vladislav.JavaNaumen.entity.Screening;
-import ru.vladislav.JavaNaumen.entity.Ticket;
-import ru.vladislav.JavaNaumen.repository.BookingRepository;
-import ru.vladislav.JavaNaumen.repository.TicketRepository;
+import ru.vladislav.javanaumen.entity.Booking;
+import ru.vladislav.javanaumen.entity.Seat;
+import ru.vladislav.javanaumen.entity.Screening;
+import ru.vladislav.javanaumen.entity.Ticket;
+import ru.vladislav.javanaumen.repository.BookingRepository;
+import ru.vladislav.javanaumen.repository.TicketRepository;
 
 @Service
 @Transactional

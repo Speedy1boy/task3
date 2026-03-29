@@ -1,4 +1,4 @@
-package ru.vladislav.JavaNaumen.controller;
+package ru.vladislav.javanaumen.controller;
 
 import java.util.List;
 
@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import ru.vladislav.JavaNaumen.entity.Screening;
-import ru.vladislav.JavaNaumen.entity.Ticket;
-import ru.vladislav.JavaNaumen.repository.ScreeningRepository;
-import ru.vladislav.JavaNaumen.repository.TicketRepository;
+import ru.vladislav.javanaumen.entity.Screening;
+import ru.vladislav.javanaumen.entity.Ticket;
+import ru.vladislav.javanaumen.repository.ScreeningRepository;
+import ru.vladislav.javanaumen.repository.TicketRepository;
 
 @RestController
 @RequestMapping("/custom")

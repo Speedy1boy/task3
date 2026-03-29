@@ -1,12 +1,12 @@
-package ru.vladislav.JavaNaumen;
+package ru.vladislav.javanaumen;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import ru.vladislav.JavaNaumen.entity.Screening;
-import ru.vladislav.JavaNaumen.repository.ScreeningRepository;
+import ru.vladislav.javanaumen.entity.Screening;
+import ru.vladislav.javanaumen.repository.ScreeningRepository;
 
 @SpringBootTest
 class ScreeningCriteriaTest {

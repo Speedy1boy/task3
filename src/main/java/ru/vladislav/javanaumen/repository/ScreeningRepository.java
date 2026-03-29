@@ -1,11 +1,11 @@
-package ru.vladislav.JavaNaumen.repository;
+package ru.vladislav.javanaumen.repository;
 
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
-import ru.vladislav.JavaNaumen.dao.ScreeningRepositoryCustom;
-import ru.vladislav.JavaNaumen.entity.Screening;
+import ru.vladislav.javanaumen.dao.ScreeningRepositoryCustom;
+import ru.vladislav.javanaumen.entity.Screening;
 
 @RepositoryRestResource(path = "screenings")
 public interface ScreeningRepository extends CrudRepository<Screening, Long>, ScreeningRepositoryCustom {

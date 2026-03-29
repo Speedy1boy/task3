@@ -1,4 +1,4 @@
-package ru.vladislav.JavaNaumen;
+package ru.vladislav.javanaumen;
 
 import java.util.List;
 import java.util.UUID;
@@ -8,12 +8,12 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import ru.vladislav.JavaNaumen.entity.Seat;
-import ru.vladislav.JavaNaumen.entity.Screening;
-import ru.vladislav.JavaNaumen.repository.BookingRepository;
-import ru.vladislav.JavaNaumen.repository.ScreeningRepository;
-import ru.vladislav.JavaNaumen.repository.SeatRepository;
-import ru.vladislav.JavaNaumen.service.BookingService;
+import ru.vladislav.javanaumen.entity.Seat;
+import ru.vladislav.javanaumen.entity.Screening;
+import ru.vladislav.javanaumen.repository.BookingRepository;
+import ru.vladislav.javanaumen.repository.ScreeningRepository;
+import ru.vladislav.javanaumen.repository.SeatRepository;
+import ru.vladislav.javanaumen.service.BookingService;
 
 @SpringBootTest
 class BookingServiceTest {

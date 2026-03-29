@@ -1,4 +1,4 @@
-package ru.vladislav.JavaNaumen;
+package ru.vladislav.javanaumen;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -8,12 +8,12 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import ru.vladislav.JavaNaumen.entity.Movie;
-import ru.vladislav.JavaNaumen.entity.Screening;
-import ru.vladislav.JavaNaumen.entity.Ticket;
-import ru.vladislav.JavaNaumen.repository.MovieRepository;
-import ru.vladislav.JavaNaumen.repository.ScreeningRepository;
-import ru.vladislav.JavaNaumen.repository.TicketRepository;
+import ru.vladislav.javanaumen.entity.Movie;
+import ru.vladislav.javanaumen.entity.Screening;
+import ru.vladislav.javanaumen.entity.Ticket;
+import ru.vladislav.javanaumen.repository.MovieRepository;
+import ru.vladislav.javanaumen.repository.ScreeningRepository;
+import ru.vladislav.javanaumen.repository.TicketRepository;
 
 @SpringBootTest
 class TicketRepositoryTest {

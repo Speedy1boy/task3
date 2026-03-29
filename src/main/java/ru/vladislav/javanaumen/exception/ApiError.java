@@ -1,4 +1,4 @@
-package ru.vladislav.JavaNaumen.exception;
+package ru.vladislav.javanaumen.exception;
 
 public record ApiError(String message) {
 

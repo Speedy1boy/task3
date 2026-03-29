@@ -1,4 +1,4 @@
-package ru.vladislav.JavaNaumen;
+package ru.vladislav.javanaumen;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package ru.vladislav.JavaNaumen.exception;
+package ru.vladislav.javanaumen.exception;
 
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;

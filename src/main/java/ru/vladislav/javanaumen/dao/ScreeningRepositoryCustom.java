@@ -1,7 +1,7 @@
-package ru.vladislav.JavaNaumen.dao;
+package ru.vladislav.javanaumen.dao;
 
 import java.util.List;
-import ru.vladislav.JavaNaumen.entity.Screening;
+import ru.vladislav.javanaumen.entity.Screening;
 
 public interface ScreeningRepositoryCustom {
     // Поиск сеансов по диапазону цены и формату
