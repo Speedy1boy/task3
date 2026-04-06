@@ -2,6 +2,7 @@ package ru.vladislav.javanaumen.service;
 
 import java.util.List;
 
+import jakarta.validation.constraints.NotNull;
 import ru.vladislav.javanaumen.entity.Booking;
 import ru.vladislav.javanaumen.entity.Seat;
 import ru.vladislav.javanaumen.entity.Screening;

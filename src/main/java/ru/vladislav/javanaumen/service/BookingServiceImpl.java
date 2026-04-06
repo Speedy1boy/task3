@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import jakarta.transaction.Transactional;
+import jakarta.validation.constraints.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
@@ -34,10 +35,10 @@ public class BookingServiceImpl implements BookingService {
     }
 
     @Override
-    public Booking createBooking(String customerName,
-                                 String customerEmail,
-                                 Screening screening,
-                                 List<Seat> seats) {
+    public Booking createBooking(@NotNull String customerName,
+                                 @NotNull String customerEmail,
+                                 @NotNull Screening screening,
+                                 @NotNull List<Seat> seats) {
         var status = transactionManager.getTransaction(new DefaultTransactionDefinition());
 
         try {

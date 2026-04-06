@@ -2,6 +2,7 @@ package ru.vladislav.javanaumen.entity;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDateTime;
 
@@ -25,9 +26,11 @@ public class Ticket {
     @ManyToOne
     private Booking booking;
 
+    @NotNull
     @ManyToOne
     private Screening screening;
 
+    @NotNull
     @ManyToOne
     private Seat seat;
 
@@ -76,7 +79,9 @@ public class Ticket {
     }
 
     public void setScreening(Screening screening) {
-        this.screening = screening;
+        if (screening != null) {
+            this.screening = screening;
+        }
     }
 
     public Seat getSeat() {
@@ -84,6 +89,8 @@ public class Ticket {
     }
 
     public void setSeat(Seat seat) {
-        this.seat = seat;
+        if (screening != null) {
+            this.seat = seat;
+        }
     }
 }

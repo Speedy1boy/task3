@@ -19,10 +19,10 @@ public class Booking {
     @Column
     private String status;
 
-    @Column
+    @Column(nullable = false)
     private String customerName;
 
-    @Column
+    @Column(nullable = false)
     private String customerEmail;
 
     public Long getId() {
@@ -54,7 +54,9 @@ public class Booking {
     }
 
     public void setCustomerName(String customerName) {
-        this.customerName = customerName;
+        if (customerName != null) {
+            this.customerName = customerName;
+        }
     }
 
     public String getCustomerEmail() {
@@ -62,6 +64,8 @@ public class Booking {
     }
 
     public void setCustomerEmail(String customerEmail) {
-        this.customerEmail = customerEmail;
+        if (customerEmail != null) {
+            this.customerEmail = customerEmail;
+        }
     }
 }
