@@ -4,6 +4,7 @@ import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -11,6 +12,7 @@ import org.springframework.security.config.annotation.web.configurers.AbstractHt
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import ru.vladislav.javanaumen.entity.Role;
 
 @Configuration
 @EnableWebSecurity
@@ -32,7 +34,7 @@ public class Config {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(requests -> requests
                         .requestMatchers("/login", "/registration").permitAll()
-                        .requestMatchers("/swagger-ui/**").hasRole("ADMIN")
+                        .requestMatchers("/swagger-ui/**").hasRole(String.valueOf(Role.ADMIN))
                         .anyRequest().authenticated())
                 .formLogin(form -> form
                         .loginPage("/login")

@@ -6,7 +6,6 @@ import ru.vladislav.javanaumen.service.ReportService;
 @RestController
 @RequestMapping("/reports")
 public class ReportController {
-
     private final ReportService reportService;
 
     public ReportController(ReportService reportService) {
